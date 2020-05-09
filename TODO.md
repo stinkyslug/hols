@@ -5,6 +5,7 @@
 - make API to return CSV format
   - page for CSV downloads
 - sqlite new version?
+- list of holidays
 
 # DONE
 
