@@ -3,6 +3,7 @@ const db = require('sqlite')
 const htm = require('htm')
 const validator = require('validator')
 const createError = require('http-errors')
+const { getDB } = require('../db')
 const { ALLOWED_YEARS, PROVINCE_IDS } = require('../config/vars.config')
 const { getCurrentHolidayYear } = require('../dates')
 
@@ -47,7 +48,7 @@ const dbmw = (cb) => {
     }
 
     try {
-      res.locals.rows = await cb(db, options)
+      res.locals.rows = await cb(getDB(), options)
     } catch (err) {
       return next(err)
     }
