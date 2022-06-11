@@ -17,7 +17,6 @@ const About = ({ data: { nextHoliday } }) =>
         <h2>“My name is Wei Teck”</h2>
         <p>I've hosted this webapp on Google Cloud Run and pointed my custom domain at it. Enjoy!</p>
 
-        <h2>Me</h2>
         
       <//>
     <//>
