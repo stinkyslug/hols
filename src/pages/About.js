@@ -9,8 +9,7 @@ const About = ({ data: { nextHoliday } }) =>
       <${Content}>
         <h1>About</h1>
         <p>
-          Work sucks, I know. But until we get the post-work future we all deserve,${' '}
-          <a href="/">${nextHoliday.nameEn}</a> is what we have to look forward to.
+          ${' '}<a href="/">${nextHoliday.nameEn}</a> is what we have to look forward to.
         </p>
 
 
