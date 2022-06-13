@@ -12,10 +12,8 @@ const linkStyle = css`
 const detailsStyle = css`
   font-size: 1em !important;
   margin-bottom: ${theme.space.md};
-
   ul {
     padding-left: 25px !important;
-
     @media (${theme.mq.md}) {
       padding-left: 35px !important;
     }
@@ -54,17 +52,13 @@ const API = () =>
             <code>2025</code>, <code>2026</code>.
           </li>
         </ul>
-         
+        <${Details}
+          summary=""
+          className=${detailsStyle}
+          data-event="true"
+          data-label="api-features"
+        >
         <//>
-
-        <h2>Citations</h2>
-        <p>
-          References to${' '}<a href="/sources">all the sources</a>${' '} this webapp uses
-          for each region in Canada, so data returned from the API should be accurate.
-        </p>
-
-        <br />
-        <br />
         <span class="bottom-link"><a href="#html" class="up-arrow">Back to top</a></span>
       <//>
     <//>
